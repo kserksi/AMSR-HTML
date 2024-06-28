@@ -1,0 +1,61 @@
+/* !
+ * Main CSS controls for the web V1.0
+ * Copyright 2024 The KSERKS Project Authors
+ * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
+ */
+
+/* font */
+@font-face{
+    font-family: 'deyihei';
+    src: url("../fonts/SmileySans-Oblique.ttf.woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+4E00-9FFF;
+    -webkit-font-feature-settings: "liga", "kern";
+    font-feature-settings: "liga", "kern";
+
+}
+body{
+    font-family: "deyihei", sans-serif;
+    font-size: 16px;
+}
+/* centering */
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+}
+
+/* SVG icon colors in default (bright mode) */
+svg.theme-icon {
+    fill: black;
+}
+
+/* SVG icon colors in dark mode */
+body[data-bs-theme="dark"] svg.theme-icon {
+    fill: white;
+}
+body, html {
+    height: 100%; /* 确保body和html填满整个视窗 */
+}
+
+#background-video {
+    position: fixed; /* 固定位置 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 视频宽度铺满屏幕 */
+    height: 100%; /* 视频高度铺满屏幕 */
+    object-fit: cover; /* 保持视频宽高比并填充容器 */
+    z-index: -1; /* 确保视频在其他内容之下 */
+}
+.header-blur {
+    background-color: rgba(189, 189, 189, 0.3); /* 背景颜色，透明度根据需要调整 */
+    backdrop-filter: blur(7px); /* 高斯模糊的强度，数值越大越模糊 */
+    z-index: 999; /* 确保此元素位于页面顶部 */
+}
+
+audio{
+    display: none;
+}
