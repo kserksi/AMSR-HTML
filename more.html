@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLsite-碧蓝档案AMSR鉴赏</title>
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/color.js"></script>
+    <script src="JS/plyr.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/icon.css">
+    <link rel="stylesheet" href="CSS/plyr.css">
+    <link rel="icon" href="imge/favicon.ico">
+    <meta name="keywords" content="碧蓝档案,DLsite">
+    <meta name="description" content="DLsite-碧蓝档案AMSR鉴赏">
+    <meta name="author" content="kserks">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light header-blur">
+    <div class="container">
+        <a class="navbar-brand px-lg-0 " href="/">DLsite-碧蓝档案AMSR鉴赏</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link  " href="/">首页</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown" aria-expanded="false">AMSR</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Yuka.html">早濑优香</a></li>
+                        <li><a class="dropdown-item" href="Hinomiya-Chinatsu.html">火宫千夏</a></li>
+                        <li><a class="dropdown-item" href="Izayoi-Nonomi.html">十六夜野乃美</a></li>
+                        <li><a class="dropdown-item" href="Kasumisawa-Miyu.html">霞泽美游</a></li>
+                        <li><a class="dropdown-item" href="Sunohara-Shun.html">春原旬</a></li>
+                        <li><a class="dropdown-item" href="Sorasaki-Hina.html">空崎阳奈</a></li>
+                        <li><a class="dropdown-item" href="Kozeki-Ui.html">古关忧</a></li>
+                        <li><a class="dropdown-item" href="Akeboshi-Himari.html">明星日鞠</a></li>
+                        <li><a class="dropdown-item" href="Kasuga-Tsubaki.html">春日椿</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="thank.html">鸣谢</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="about.html">关于</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active " href="#">更多</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="warnings-link.html" target="_blank" rel="noopener noreferrer" aria-label="外部链接：ブルーアーカイブ×ASMR">ブルーアーカイブ×ASMR</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<video autoplay loop muted playsinline id="background-video">
+    <source src="video/mp4/Plana-work.mp4" type="video/webm">
+</video>
+<div class="px-3 py-1 pt-md-5 pb-md-4 mx-auto text-center center-screen header-blur">
+    <main class="px-3">
+        <h1>有关此网站更多信息</h1>
+        <br>
+        <p class="list-group">你好，我是 KSERKS </p>
+        <p class="list-group">本网站正在处于快速开发滚动阶段，每天会根据反馈来修改网站。</p>
+        <p class="list-group">由于是服务小部分人，所以本网站开发以及针对性非常强。</p>
+        <p class="list-group">在此：祝你身体健康，永远不死。</p>
+        <br>
+        <audio id="player" controls>
+            <source src="music/BGM/The-Girl-Who-Dares-Now.m4a" type="audio/mpeg">
+        </audio>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const player = new Plyr('#player');{
+                    if (localStorage.getItem('theme') === 'dark') {
+                        player.media.setAttribute('data-theme', 'dark');
+                    } else {
+                        player.media.setAttribute('data-theme', 'light');
+                    }
+                }
+                player.media.volume = 0.4;
+            });
+        </script>
+        <br>
+        <p class="lead">&copy; 本歌曲由网易云音乐提供，本站不提供任何存储服务，版权归各个版权所有者所有。</p>
+    </main>
+</div>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="mb-1">&copy; ブルーアーカイブ &copy; 蔚蓝档案 &copy; DLsite 版权所有。 本站为非官方站点，本站与官方没有任何关系。</p>
+        <p class="mb-1">Github仓库： <a href="https://github.com/kserksi/AMSR-HTML" target="_blank" class="link-info" aria-label="外部链接：GitHub">AMSR-HTML</a></p>
+    </div>
+</footer>
+</body>
+</html>

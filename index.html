@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLsite-碧蓝档案AMSR鉴赏</title>
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/color.js"></script>
+    <script src="JS/play.js"></script>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/icon.css">
+    <link rel="icon" href="imge/favicon.ico">
+    <meta name="keywords" content="碧蓝档案,DLsite">
+    <meta name="description" content="DLsite-碧蓝档案AMSR鉴赏">
+    <meta name="author" content="kserks">
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light header-blur">
+    <div class="container">
+        <a class="navbar-brand px-lg-0" href="index.html">DLsite-碧蓝档案AMSR鉴赏</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">AMSR</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Yuka.html">早濑优香</a></li>
+                        <li><a class="dropdown-item" href="Hinomiya-Chinatsu.html">火宫千夏</a></li>
+                        <li><a class="dropdown-item" href="Izayoi-Nonomi.html">十六夜野乃美</a></li>
+                        <li><a class="dropdown-item" href="Kasumisawa-Miyu.html">霞泽美游</a></li>
+                        <li><a class="dropdown-item" href="Sunohara-Shun.html">春原旬</a></li>
+                        <li><a class="dropdown-item" href="Sorasaki-Hina.html">空崎阳奈</a></li>
+                        <li><a class="dropdown-item" href="Kozeki-Ui.html">古关忧</a></li>
+                        <li><a class="dropdown-item" href="Akeboshi-Himari.html">明星日鞠</a></li>
+                        <li><a class="dropdown-item" href="Kasuga-Tsubaki.html">春日椿</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="thank.html">鸣谢</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">关于</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="more.html">更多</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-warning" href="warnings-link.html" target="_blank" rel="noopener noreferrer" aria-label="外部链接：ブルーアーカイブ×ASMR">ブルーアーカイブ×ASMR</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--正文-->
+<audio id="aud" controls="controls" preload="metadata">
+    <source src="music/BGM/Constant Moderato.m4a" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+</audio>
+<nav class="dropup position-fixed bottom-0 start-0 mb-3 me-3 bd-mode-toggle" role="navigation" aria-label="Mode Toggle">
+    <button type="button" class="btn btn-outline-primary" onclick="playAudio()" aria-label="播放音频" id="playButton"><i class="bi bi-play-fill"></i></button>
+</nav>
+<div id="loadingIndicator" class="d-none">加载中...</div>
+<video autoplay loop muted playsinline id="background-video">
+    <source src="video/mp4/index.mp4" type="video/mp4">
+</video>
+<div class="px-2 py-1 pt-3 pb-4  text-center center-screen  header-blur">
+    <main class="px-2">
+        <h1 >欢迎链接到 DLsite 的碧蓝档案 AMSR 鉴赏，sensei。</h1>
+        <p class="lead">正如你所见到的那样，这里是鸡窝托斯的 AMSR 专区，在这里，有一些学员为老师特别录制了专属于她们的 AMSR 音频。</p>
+        <p class="lead">但是由于各种各样的原因导致信用点数不足，所以说我们不能将其所有的音频拿下，因此特地设立了这个页面，让 Sensei 们可以自由地选择自己喜欢的AMSR。</p>
+        <hr>
+        <p class="lead">版权信息提示：</p>
+        <p>在此页面的音频均来自 <a href="https://www.dlsite.com/modpub/lp/home/BlueArchiveASMR/" target="_blank" class="link-info" aria-label="外部链接：ブルーアーカイブ×ASMR">ブルーアーカイブ×ASMR</a>。</p>
+        <p>人物图片以及介绍材料均来自 <a href="https://mzh.moegirl.org.cn/" target="_blank" class="link-info" aria-label="萌娘百科">萌娘百科</a>。</p>
+        <hr>
+        <img src="imge/Arona2_03.webp" alt="200px-Arona2_03.jpg" class="mx-auto d-block rounded" width="200px" height="141px">
+    </main>
+</div>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="mb-1">&copy; ブルーアーカイブ &copy; 蔚蓝档案 &copy; DLsite 版权所有。 本站为非官方站点，本站与官方没有任何关系。</p>
+        <p class="mb-1">Github仓库： <a href="https://github.com/kserksi/AMSR-HTML" target="_blank" class="link-info" aria-label="外部链接：GitHub">AMSR-HTML</a></p>
+    </div>
+</footer>
+</body>
+</html>
