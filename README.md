@@ -12,7 +12,7 @@ Our team has carefully selected the best tools to ensure a seamless user experie
 Every audio track 🎬🎶 featured on the site is sourced directly from the creators at Azure Lane and DLsite, adhering strictly to their open-source agreements 📝🔒. We respect the artistry and craftsmanship that goes into each piece, ensuring that every listener enjoys high-quality content that's officially endorsed.
 
 📜 **License:**
-The project is governed by the [MIT](https://github.com/kserksi/AMSR-HTML/blob/main/LICENSE) open-source license .
+The project is governed by the [Apache 2.0](https://github.com/kserksi/AMSR-HTML/blob/main/LICENSE) open-source license .
 
 🚀 **Why Contribute?**
 By contributing to this repository 📂🤝, you're not only enhancing a platform for relaxation but also joining a vibrant community of developers who share a passion for creating meaningful digital experiences. Your skills can help us reach new heights, and together, we can create a space that brings peace and tranquility to people around the globe 🌍✨.
